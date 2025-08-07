@@ -6,3 +6,4 @@
     - vars/vault.yml
   roles:
     - role: journal
+    - role: credentials
