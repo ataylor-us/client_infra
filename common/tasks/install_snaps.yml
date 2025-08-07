@@ -1,0 +1,12 @@
+---
+- name: Install packages
+  ansible.builtin.import_tasks: common/tasks/install_packages.yml
+  vars:
+    packages:
+      - snapd
+- name: Install packages using snap
+  become: true
+  community.general.snap:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ snaps }}"
