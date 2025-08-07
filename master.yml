@@ -1,0 +1,8 @@
+---
+- name: Configure system
+  hosts: mini
+  vars_files:
+    - vars/public.yml
+    - vars/vault.yml
+  roles:
+    - role: journal
