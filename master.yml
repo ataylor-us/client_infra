@@ -8,3 +8,4 @@
     - role: journal
     - role: credentials
     - role: terminal
+    - role: automation
