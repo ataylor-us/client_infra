@@ -10,3 +10,4 @@
     - role: terminal
     - role: automation
     - role: version_control
+    - role: file_manager
