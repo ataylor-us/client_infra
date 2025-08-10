@@ -1,0 +1,8 @@
+---
+- name: Configure Git user settings
+  ansible.builtin.template:
+    src: gitconfig.j2
+    dest: "~/.gitconfig"
+    owner: "{{ ansible_env.USER }}"
+    group: "{{ ansible_env.USER }}"
+    mode: "0644"

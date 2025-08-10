@@ -9,3 +9,4 @@
     - role: credentials
     - role: terminal
     - role: automation
+    - role: version_control
