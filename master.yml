@@ -11,3 +11,4 @@
     - role: automation
     - role: version_control
     - role: file_manager
+    - role: feed_client
