@@ -1,0 +1,16 @@
+---
+- name: Create newsboat config directory
+  become: true
+  ansible.builtin.file:
+    group: 1000
+    mode: "0755"
+    owner: 1000
+    path: "~/.newsboat"
+    state: directory
+- name: Configure newsboat settings
+  ansible.builtin.template:
+    src: config.j2
+    dest: "~/.newsboat/config"
+    owner: "{{ ansible_env.USER }}"
+    group: "{{ ansible_env.USER }}"
+    mode: "0644"
