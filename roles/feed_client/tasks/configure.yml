@@ -1,6 +1,5 @@
 ---
 - name: Create newsboat config directory
-  become: true
   ansible.builtin.file:
     group: 1000
     mode: "0755"
